@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <nav>
+      <button><a href="../../index.html">Home</a></button>
+      <button><a href="../tree.html">Back</a></button>
+    </nav>
+    <h1>Big O</h1>
+    <p>
+      Big O notation is a way to describe the efficiency of an algorithm. It is a way to describe how the runtime of an algorithm grows as the input size grows. It is a way to describe the worst case scenario of an algorithm. It is a way to describe the upper bound of an algorithm.
+    </p>
+    <div>
+      <h2>Constant time</h2>
+      <p>
+        An algorithm is said to run in constant time if the runtime of the algorithm does not change as the input size grows. This is denoted by O(1).
+      </p>
+      <code>
+        def constant_time(arr):
+          return arr[0]
+      </code>
+    </div>
+    <div>
+      <h2>Linear time</h2>
+      <p>
+        An algorithm is said to run in linear time if the runtime of the algorithm grows linearly as the input size grows. This is denoted by O(n).
+      </p>
+      <code>
+        def linear_time(arr):
+          for i in arr:
+            print(i)
+      </code>
+    </div>
+    <div>
+      <h2>Quadratic time</h2>
+      <p>
+        An algorithm is said to run in quadratic time if the runtime of the algorithm grows quadratically as the input size grows. This is denoted by O(n^2).
+      </p>
+      <code>
+        def quadratic_time(arr):
+          for i in arr:
+            for j in arr:
+              print(i, j)
+      </code>
+    </div>
+  </main>
+</body>
+</html>
