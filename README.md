@@ -10,3 +10,4 @@ In the fututre I will organize everything and have proper docs
 1. big O <-- currently here
 2. arrays
 3. hashing
+
