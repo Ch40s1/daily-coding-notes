@@ -4,15 +4,8 @@ body{
     margin: 0;
     padding: 0;
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-div#container{
-    width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
+.treeContainer {
+    background-color: rgb(46, 43, 43);
+    color: white;
+    width: 120px;
 }

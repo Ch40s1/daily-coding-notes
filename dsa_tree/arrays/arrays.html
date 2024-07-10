@@ -13,74 +13,63 @@
     <button><a href="../tree.html">Back</a></button>
   </nav>
   <main>
-    <h1>Array Problems</h1>
-    <p>
-      We are going to slowly build up our knowledge of arrays. We will start with the basics and then move on to more
-      complex topics.
-    </p>
     <div>
-      <p>Theres several methods to solving array problems.</p>
+      <h2>Two Pointers</h2>
+      <pre>
+        <code>
+          pseudocode:
+          def twoPointers(arr):
+
+          // set left pointer to 0
+            left = 0
+
+          // set right pointer to the last element
+            right = len(arr) - 1
+
+          // while left pointer is less than right pointer
+            while left < right:
+
+          // if the condition is satisfied
+              if arr[left] + arr[right] == target:
+
+          // return the pair
+                return [left, right]
+
+          // if the sum of the pair is less than the target
+              elif arr[left] + arr[right] < target:
+
+          // move the left pointer to the right
+                left += 1
+              else:
+          // move the right pointer to the left
+                right -= 1
+
+          // return empty list if no pair is found
+            return []
+        </code>
+      </pre>
       <ul>
-        <li>Two points</li>
-        <li>Sliding window</li>
-        <li>Prefix sum</li>
+        <a href="https://leetcode.com/problems/reverse-words-in-a-string-iii/description/" target="_blank">
+          <li>557. Reverse Words in a string III</li>
+        </a>
+        <a href="https://leetcode.com/problems/reverse-only-letters/description/" target="_blank">
+          <li>917. Reverse only letters</li>
+        </a>
+        <a href="https://leetcode.com/problems/minimum-common-value/description/" target="_blank">
+          <li>2540. Minimum Common Value</li>
+        </a>
+        <a href="https://leetcode.com/problems/move-zeroes/description/" target="_blank">
+          <li>283. Move Zeroes</li>
+        </a>
+        <a href="https://leetcode.com/problems/reverse-prefix-of-word/description/" target="_blank">
+          <li>2000 Reverse Prefix of word</li>
+        </a>
       </ul>
+
     </div>
-    <section>
-      <div>
-        <h2>Two pointers</h2>
-        <p>
-          Two pointers is a technique where you use two pointers to solve a problem. You can use this technique to solve
-          problems where you need to find a pair of elements that satisfy a certain condition.
-        </p>
-        <pre>
-          <code>
-            pseudocode:
-            def twoPointers(arr):
-
-            // set left pointer to 0
-              left = 0
-
-            // set right pointer to the last element
-              right = len(arr) - 1
-
-            // while left pointer is less than right pointer
-              while left < right:
-
-            // if the condition is satisfied
-                if arr[left] + arr[right] == target:
-
-            // return the pair
-                  return [left, right]
-
-            // if the sum of the pair is less than the target
-                elif arr[left] + arr[right] < target:
-
-            // move the left pointer to the right
-                  left += 1
-                else:
-            // move the right pointer to the left
-                  right -= 1
-
-            // return empty list if no pair is found
-              return []
-          </code>
-        </pre>
-        <ul>
-          <a href="https://leetcode.com/problems/reverse-words-in-a-string-iii/description/" target="_blank"><li>557. Reverse Words in a string III</li></a>
-          <a href="https://leetcode.com/problems/reverse-only-letters/description/" target="_blank"><li>917. Reverse only letters</li></a>
-          <a href="https://leetcode.com/problems/minimum-common-value/description/" target="_blank"><li>2540. Minimum Common Value</li></a>
-          <a href="https://leetcode.com/problems/move-zeroes/description/" target="_blank"><li>283. Move Zeroes</li></a>
-          <a href="https://leetcode.com/problems/reverse-prefix-of-word/description/" target="_blank"><li>2000 Reverse Prefix of word</li></a>
-        </ul>
-      </div>
-      <div>
-        <h2>Sliding window</h2>
-        <p>
-          Sliding window is a technique where you use a window to solve a problem. You can use this technique to solve
-          problems where you need to find a subarray that satisfies a certain condition.
-        </p>
-        <pre>
+    <div>
+      <h2>Sliding Window</h2>
+      <pre>
           <code>
             pseudocode:
             def slidingWindow(arr, k):
@@ -121,19 +110,23 @@
             // return the maximum sum
               return maxSum
           </code>
-          <ul>
-            <li><a href="https://leetcode.com/problems/minimum-size-subarray-sum/description/" target="_blank">209 Minimum Size Subarray Sum</a></li>
-            <li><a href="https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/" target="_blank">1456 Maximum number of vowels in a substring of given length</a></li>
-            <li><a href="https://leetcode.com/problems/get-equal-substrings-within-budget/description/" target="_blank">1209 Get equal substrings within budget</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Prefix Sum</h2>
-        <p>
-          Prefix sum is a technique where you use a prefix sum array to solve a problem. You can use this technique to
-          solve problems where you need to find the sum of a subarray in constant time.
-        </p>
-        <pre>
+        </pre>
+      <ul>
+        <a href="https://leetcode.com/problems/minimum-size-subarray-sum/description/" target="_blank">
+          <li>209 Minimum Size Subarray Sum</li>
+        </a>
+        <a href="https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/"
+          target="_blank">
+          <li>1456 Maximum number of vowels in a substring of given length</li>
+        </a>
+        <a href="https://leetcode.com/problems/get-equal-substrings-within-budget/description/" target="_blank">
+          <li>1209 Get equal substrings within budget</li>
+        </a>
+      </ul>
+    </div>
+    <div>
+      <h2>Prefix Sum</h2>
+      <pre>
           <code>
             pseudocode:
             def prefixSum(arr):
@@ -153,13 +146,18 @@
             // return the prefix sum array
               return prefixSum
           </code>
-          <ul>
-            <li><a href="https://leetcode.com/problems/find-the-highest-altitude/description/" target="_blank">1732 Find the highest altitude</a></li>
-            <li><a href="https://leetcode.com/problems/find-pivot-index/description/" target="_blank">724 find pivot index</a></li>
-            <li><a href="https://leetcode.com/problems/range-sum-query-immutable/description/" target="_blank">303 Range sum query -- immutable</a></li>
-        </ul>
-      </div>
+        </pre>
+      <ul>
+        <li><a href="https://leetcode.com/problems/find-the-highest-altitude/description/" target="_blank">1732 Find the
+            highest altitude</a></li>
+        <li><a href="https://leetcode.com/problems/find-pivot-index/description/" target="_blank">724 find pivot
+            index</a></li>
+        <li><a href="https://leetcode.com/problems/range-sum-query-immutable/description/" target="_blank">303 Range sum
+            query -- immutable</a></li>
+      </ul>
+    </div>
     </section>
   </main>
 </body>
+
 </html>
